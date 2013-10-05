@@ -1,6 +1,6 @@
 Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
 
-```
+```js
 
 "use strict";
 
