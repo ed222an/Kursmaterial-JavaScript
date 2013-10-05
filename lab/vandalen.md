@@ -1,10 +1,10 @@
 Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
 
-[javascript]
+```
 
 "use strict";
 
-[/javascript]
+```
 
 överst i samtliga inlänkade javascript-filer.
 ## Arrayer och objekt
