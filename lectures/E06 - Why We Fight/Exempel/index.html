@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flash / Thunder</title>
+	
+	</head>
+	
+	<body>
+		<div id="Airborne" eget_attribut="test" class="ab">TEs</div>
+
+		<div class="topMenu">
+			<ul id="mainNav">
+				<li><a href="#">VAT69</a></li>
+				<li><a href="#">Coffey</a></li>
+			</ul>
+		</div>
+		
+		<script type="text/javascript">
+		/*	
+			var node1 = document.getElementById("mainNav");
+
+			alert(node1.nodeName); // UL
+			alert(node1.nodeType); // 1 
+
+	
+			var node2 = node1.getElementsByTagName("li");
+			alert(node2.length);
+			alert(node2[0].nodeName); // A
+			
+			var node2 = document.getElementsByTagName("div");
+			alert(node2.length);
+			alert(node2[0].nodeName); // A
+			*/
+			
+			
+			/*var html = document.documentElement;
+			alert(document.childNodes[0] === html);
+			alert(document.firstChild === html);
+			alert(document.lastChild === html);*/
+			var div = document.getElementById("Airborne");
+			
+	/*		alert(div.id);
+			alert(div.eget_attribut);
+			alert(div.class);
+			alert(div.className);
+		*/	
+			
+			
+		/*	alert(div.getAttribute("id"));
+			alert(div.getAttribute("eget_attribut"));
+			alert(div.getAttribute("class"));*/
+			
+			div.firstChild.nodeValue = "Testar lite<br />";
+			
+			div.innerHTML += "<p>Lägger till ett nytt stycke sist.</p>";
+			
+			alert(document.body.childNodes.length);
+			
+		</script>
+		
+	</body>
+
+</html>
+

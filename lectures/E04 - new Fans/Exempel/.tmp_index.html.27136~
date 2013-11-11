@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Laboration 2 - JS OOP</title>
+		<script src="fil1.js"></script>
+		<script src="fil2.js"></script>
+		
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			test();
+		</script>
+		
+	
+	
+	
+		<script src="index.js"></script>
+		
+	</body>
+
+</html>

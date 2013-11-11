@@ -1,0 +1,31 @@
+.popupWindow {
+	background:#E4E495;
+	font-size: 1.2em;
+	color:black;
+	width:500px;
+	padding:10px;
+	border:6px solid #D4D459;
+	overflow:hidden;
+	margin:auto;
+	text-align: center;
+	-moz-box-shadow: 5px 5px 3px #888;
+	-webkit-box-shadow: 5px 5px 3px #888;
+	box-shadow: 5px 5px 3px #888;
+}
+
+.popupWindow input {
+	margin:auto;
+	display:block;
+	width:100px;
+}
+
+body {
+	font-family: 'Merriweather', arial, serif;
+	background: #849644;
+	
+}
+
+h1 {
+	text-align:center;
+	
+}

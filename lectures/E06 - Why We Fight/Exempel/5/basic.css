@@ -1,0 +1,153 @@
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #797066;
+	line-height:160%;
+	background:#fcfaf4;
+
+}
+
+#container {
+	width: 600px;
+	margin:auto;
+	background: #51473d;
+	border: 1px solid #cecab9;
+}
+
+#topbar {
+	background-image:url(coffey.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	width:600px;
+	height:220px;
+	background-color:#51473d;
+	text-align:right;
+	padding-top: 2px;
+	margin-right: 4px;
+	color:#eae7d2;
+	font-size: 0.8em;
+	font-style:italic;
+	
+}
+
+#menu a {
+	display:none;
+	text-decoration:none;
+	text-transform:capitalize;
+	color:#eae7d2;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	padding-top:5px;
+	margin-left:10px;
+
+}
+
+#menu ul li {
+	display: inline;
+}
+
+#menu ul li a {
+	display:block;
+	float:left;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:5px;
+	padding-top:5px;
+	background: #797066;
+	border-top: 1px solid #847c73;
+	margin-left:1px;
+}
+
+#menu ul li.active {
+
+}
+
+#menu ul li.active a {
+	background: #eae7d2;
+	position:relative;
+	top:1px;
+	color:#888076;
+	border-top: 1px solid #eae7d2;
+}
+#menu ul li a:hover {
+	background: #9c9084;
+}
+
+#menu ul li.active a:hover {
+	background: #eae7d2;
+}
+
+
+
+#content {
+	clear:both;
+	border-top: 1px solid white;
+	background: #eae7d2;
+	padding: 10px;
+}
+
+#content h1,h2 {
+	margin-top:0;
+	padding-top:5px;
+	font-weight: normal;
+	font-family:"Times New Roman", Times, serif;
+}
+
+#maincontent {
+	float: left;
+	width: 60%;
+	padding-right: 10px;
+	border-right: 1px dashed silver;
+	margin-right: 10px;
+}
+
+#maincontent img {
+	float:left;
+	margin-right: 5px;
+
+}
+
+#bottomcontent {
+	clear: both;
+	font-style:italic;
+	font-size: 10px;
+	margin-top:20px;
+}
+
+#subcontent h1 {
+	color: #51473d;
+	font-size: 1.3em;
+}
+
+#subcontent p {
+	/*	font-style:italic; */
+	font-size:0.7em;
+}
+
+#subcontent h2 {
+	color: #51473d;
+	font-size: 1.1em;
+	margin-bottom:0;
+}
+#subcontent ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#subcontent ul a {
+	color:#51473d;
+
+
+}
+
+#subcontent ul a:hover {
+	color:black;
+	text-decoration:none;
+	border-bottom: 1px solid grey;
+}
+
+
