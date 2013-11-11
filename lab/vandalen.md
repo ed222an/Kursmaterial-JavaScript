@@ -1,9 +1,7 @@
 Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
 
 ```js
-
 "use strict";
-
 ```
 
 överst i samtliga inlänkade javascript-filer.
@@ -17,9 +15,9 @@ Objekten i arrayen som skickas som argument ska innehålla två egenskaper:
 
 Exempel på array som skickas som argument till funktionen:
 
-[javascript]
+```js
 var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, {name: "Mats Loock", age: 46}];
-[/javascript]
+```
 
 
 ### Returvärde:
@@ -30,8 +28,7 @@ Objektet som returneras ska innehålla fyra egenskaper:	* minAge **- nummer inn
 
 Testa genom att skriva ut resultatet till konsolen:
 
-[javascript]
-
+```js
 var makePerson(persArr) {
    result = {};
 
@@ -44,7 +41,7 @@ var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36},
 var result = makePerson(data);
 
 console.log(result);
-[/javascript]
+```
 
 ### Exempel på resultat:
 <img class="size-full wp-image-541 aligncenter" src="http://coursepress.lnu.se/kurs/webbteknik-i/files/2012/11/2012-11-29-09-16-41.png" alt="" width="727" height="80" />
