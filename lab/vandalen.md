@@ -16,7 +16,7 @@ Objekten i arrayen som skickas som argument ska innehålla två egenskaper:
 Exempel på array som skickas som argument till funktionen:
 
 ```js
-var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, {name: "Mats Loock", age: 46}];
+var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, {name: "Mats Loock", age: 46}];
 ```
 
 
@@ -36,7 +36,7 @@ var makePerson(persArr) {
 
    return result;
 }
-var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, {name: "Mats Loock", age: 46}];
+var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, {name: "Mats Loock", age: 46}];
 
 var result = makePerson(data);
 
