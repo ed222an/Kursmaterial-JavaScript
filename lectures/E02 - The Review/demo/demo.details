@@ -1,0 +1,9 @@
+---
+ name: Demo, föreläsning 1
+ description: 
+ authors:
+   - Johan Leitet
+ resources:
+   
+ normalize_css: no
+ ...
