@@ -123,8 +123,8 @@ Objektet som returneras ska innehålla fyra egenskaper:
 Testa genom att skriva ut resultatet till konsolen:
 
 ```js
-var makePerson(persArr) {
-   result = {};
+var makePerson = function(persArr) {
+   var result = {};
 
    // Lös uppgiften
 
