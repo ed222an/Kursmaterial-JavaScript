@@ -2,7 +2,7 @@
 Genom att öva sig på de grundläggande koncepten i JavaScript öppnas vägen allteftersom till de mer avancerade funktionerna. Man måste lära sig krypa innan man kan gå, även i JavaScript!
 
 ## Mål
-Efter du genomfört och blivit godkänd på laborationen har du kunskaper i att förstå grundläggande begrepp inom JavaScript. V
+Efter du genomfört och blivit godkänd på laborationen har du kunskaper i att förstå grundläggande begrepp inom JavaScript.
 
 
 Du kommer även ha kunskaper om objekten String, Math, Array och Date. Vidare han du också kombinera funktionaliteten hos objekten för att skapa dynamiska JavaScript.
