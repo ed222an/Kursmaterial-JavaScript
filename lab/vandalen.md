@@ -7,6 +7,16 @@ Efter du genomfört och blivit godkänd på laborationen har du kunskaper i att 
 
 Du kommer även ha kunskaper om objekten String, Math, Array och Date. Vidare han du också kombinera funktionaliteten hos objekten för att skapa dynamiska JavaScript.
 
+
+## Strict mode
+Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
+
+```js
+"use strict";
+```
+
+
+
 ## Uppgift X - Gissa det hemliga talet
 En klassiker i programmeringskurser och en uppgift som du kommer att få göra många gånger. Spelet, gissa det hemliga talet. 
 
@@ -24,6 +34,7 @@ Några korta krav:
 * Funktionen _guess_ ska vara en funktion utan sidoeffekter. ("Pure function")
 * Information om parametrar och returvärden finns i js-filen.
 * Programmet behöver hålla reda på hur många gissningar som gjorts.
+* Fundera kring felhantering. Hur gör du om användaren inte matar in ett tal?
 
 ### ![][info] Tips
 För att slumpa ett tal mellan 1 och 100 kan du använda dig av följande kodstycke.
@@ -35,15 +46,30 @@ Math.floor( Math.random() * 101)+1;
 
 Om du är osäker på hur Math.floor() och Math.random() fungerar så hittar du information om funktionerna i kurslitteraturen eller i föreläsningsmaterialet.
 
-## Uppgift X
-Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
-
-```js
-"use strict";
-```
 
 överst i samtliga inlänkade javascript-filer.
-## Arrayer och objekt
+
+
+## Uppgift X - Strängar
+I denna uppgift ska du titta lite närmare på objektet String som finns att tillgå i JavaScript. I String-objektet finns många metoder och egenskaper. I denna uppgift ska du bekanta dig med några stycken av dessa. String-objektet är värdefullt när textsträngar ska behandlas.
+
+Lös uppgiftens moment (anrop till funktioner) i ett och samma HTML-dokument. Du ska skriva funktionen i en separat scriptfil.
+
+Moment I
+Skriv funktionen konvertera i JavaScript. Denna funktion ska ta en textsträng som argument. Vidare ska funktionen ändra alla versaler i argumentet till gemener och alla gemener i argumentet till versaler. Slutligen ska alla ”a” och ”A” ändras till ”#”.
+
+Exempel på indata: “Jag tycker JAVASCRIPT är KUL!” skall alltså bli utdata: “j#G TYCKER j#v#script ÄR kul!”.
+
+När allt är ändrat ska resultatet returneras som en ny textsträng och sedan skrivas ut i konsolen.
+
+### ![](info) Tips
+Användbara funktioner, i String-objektet, för denna uppgift är bland annat:
+
+`toLowerCase()` `toUpperCase()` Fler användbara funktioner i String-objetet hittar du på t.ex. Mozilla Developer eller i föreläsningsmaterialet.
+
+
+
+## Uppgift X - Arrayer och objekt
 Din uppgift är att skapa en funktion utan sidoeffekter **("pure function")** som tar en array innehållande ett godtyckligt antal objekt (personer med namn och ålder) som argument och returnerar ett nytt objekt. Det objekt som returneras ska innehålla information om den högsta åldern, lägsta åldern, medelåldern samt en sträng med samtliga namn sorterade i bokstavsordning.
 
 ### Argument:
