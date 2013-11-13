@@ -99,6 +99,9 @@ För att ta reda på hur många millisekunder som förflutit sedan 1 januari, 19
 ## Uppgift 4 - Vandalen - Arrayer och objekt
 Din uppgift är att skapa en funktion utan sidoeffekter **("pure function")** som tar en array innehållande ett godtyckligt antal objekt (personer med namn och ålder) som argument och returnerar ett nytt objekt. Det objekt som returneras ska innehålla information om den högsta åldern, lägsta åldern, medelåldern samt en sträng med samtliga namn sorterade i bokstavsordning.
 
+### Testning
+Till denna uppgift finns ett antal enhetstester. Det betyder att när du nu går in på index.html så kommer du att se felmeddelanden som att: `ReferenceError: makePerson is not defined`. Efterhand som du skapar din funktion och implementerar funktionalitet så kommer också testerna att bli gröna. När samtliga tester går igenom så bör du vara klar med uppgiften!
+
 ### Argument:
 Objekten i arrayen som skickas som argument ska innehålla två egenskaper:
 
