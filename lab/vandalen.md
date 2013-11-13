@@ -61,5 +61,7 @@ console.log(result);
 ### Exempel på resultat:
 <img class="size-full wp-image-541 aligncenter" src="http://coursepress.lnu.se/kurs/webbteknik-i/files/2012/11/2012-11-29-09-16-41.png" alt="" width="727" height="80" />
 
-### ![](https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/star_yellow.png) Stjärnuppgift
+### ![](star) Stjärnuppgift
 Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
+
+[star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/star_yellow.png
