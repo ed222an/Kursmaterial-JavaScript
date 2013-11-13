@@ -8,16 +8,18 @@ Efter du genomfört och blivit godkänd på laborationen har du kunskaper i att 
 Du kommer även ha kunskaper om objekten String, Math, Array och Date. Vidare han du också kombinera funktionaliteten hos objekten för att skapa dynamiska JavaScript.
 
 
-## Strict mode
-Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
+## Strict mode och funktioner utan sidoeffekter
+Samtliga inlänkade filer ska använda ES5 strict-mode. Av denna anledning är strängen:
 
 ```js
 "use strict";
 ```
 
+placerad överst i varje .js-fil.
 
+Samtliga funktioner som du implementerar i denna laboration ska vara så kallade "Pure functions", funktioner utan sidoeffekter. Undantaget är att du gärna får använda console.log för debuginformation.
 
-## Uppgift X - Gissa det hemliga talet
+## Uppgift 1 - Gissa det hemliga talet
 En klassiker i programmeringskurser och en uppgift som du kommer att få göra många gånger. Spelet, gissa det hemliga talet. 
 
 Din uppgift blir att färdigställa funktionen "guess" som du hittar i katalogen "guess" i laborations-reprot.
@@ -29,10 +31,9 @@ Katalogen består av två filer:
 
 Spelet går ut på att datorn slumpar ett hemligt tal mellan 1 och 100 och låter sedan användaren gissa sig till talet. Om talet användaren gissade på är lägre än det hemliga talet ska ett meddelande visas som talar om för användaren att det hemliga numret är högre än gissningen, likadant ska ett meddelande visas om gissningen var för hög. Användaren ska få gissa på det hemliga numret tills det att rätt nummer gissas. När spelet är slut ska ett meddelande visas som innehåller det hemliga numret och det antal gissningar användaren behövde för att hitta det hemliga numret.
 
-Några korta krav:
+Att tänka på:
 
-* Funktionen _guess_ ska vara en funktion utan sidoeffekter. ("Pure function")
-* Information om parametrar och returvärden finns i js-filen.
+* Det är i funktionen "guess" som du ska skriva din kod. Som argument får du det tal användaren gissat på. Returvärdet är angivet i koden.
 * Programmet behöver hålla reda på hur många gissningar som gjorts.
 * Om användaren matar in något felaktigt. Hur ska det hanteras?
 
@@ -46,31 +47,27 @@ Math.floor( Math.random() * 101)+1;
 
 Om du är osäker på hur Math.floor() och Math.random() fungerar så hittar du information om funktionerna i kurslitteraturen eller i föreläsningsmaterialet.
 
-
-överst i samtliga inlänkade javascript-filer.
-
-
-## Uppgift X - Strängar
+## Uppgift 2 - Strängar
 I denna uppgift ska du titta lite närmare på objektet String som finns att tillgå i JavaScript. I String-objektet finns många metoder och egenskaper. I denna uppgift ska du bekanta dig med några stycken av dessa. String-objektet är värdefullt när textsträngar ska behandlas.
 
 Uppgiften löser du i filerna som finns i katalogen "strings".
-Fyll på med den kod som behövs i funktionen convertString(str). Denna funktion ska ta en textsträng som argument. Vidare ska funktionen ändra alla versaler i argumentet till gemener och alla gemener i argumentet till versaler. Slutligen ska alla ”a” och ”A” ändras till ”#”.
+Fyll på med den kod som behövs i funktionen `convertString(str)`. Denna funktion ska ta en textsträng som argument. Vidare ska funktionen ändra alla versaler i argumentet till gemener och alla gemener i argumentet till versaler. Slutligen ska alla `a` och `A` ändras till `#`.
 
-Exempel på indata: “Jag tycker JAVASCRIPT är KUL!” skall alltså returnera: “j#G TYCKER j#v#script ÄR kul!”.
+Exempel på indata: `Jag tycker JAVASCRIPT är KUL!` skall alltså returnera: `j#G TYCKER j#v#script ÄR kul!`.
 
 Observera att även svenska tecken ska omfattas av omvandlingen.
 
-När allt är ändrat ska resultatet returneras som en ny textsträng varvid programmet kommer att skriva ut den under imatningsfältet.
+När allt är ändrat ska resultatet returneras som en ny textsträng varvid programmet kommer att skriva ut den under inmatningsfältet.
 
 Om användaren klickar på "omvandla" så ska din funktion kasta ett undantag med en lämplig text.
 
-### ![](info) Tips
+### ![][info] Tips
 Användbara funktioner, i String-objektet, för denna uppgift är bland annat:
 
 `toLowerCase()` `toUpperCase()` Fler användbara funktioner i String-objetet hittar du på t.ex. Mozilla Developer eller i föreläsningsmaterialet.
 
-## Uppgift X - Födelsedagen
-Nu ska du skriva ett JavaScript som tar reda på hur många dagar det är kvar till användarens födelsedag!
+## Uppgift 3 - Födelsedagen
+Nu ska du skriva ett JavaScript som tar reda på hur många dagar det är kvar till användarens födelsedag.
 
 Till din hjälp så har du den kod som finns i katalogen "birthday".
 
@@ -80,6 +77,7 @@ Användaren kan mata in ett datum som kommer att skickas in till den funktion so
 * Utifrån den inmatade strängen ska du i funktionen räkna ut hur många dagar det är kvar till att användaren fyller år och returnera detta.
 
 Betrakta speciellt hur du ska hantera följande:
+
 * Användaren kan redan ha fyllt år? Exempelvis i mars. 
 * Vad händer vid skottår?
 * Fundera kring om din kod uppför sig olika före eller efter klockan 12.00 på dagen.
@@ -97,7 +95,7 @@ För att ta reda på hur många millisekunder som förflutit sedan 1 januari, 19
 `getTime()`
 
 
-## Uppgift X - Arrayer och objekt
+## Uppgift 4 - Vandalen - Arrayer och objekt
 Din uppgift är att skapa en funktion utan sidoeffekter **("pure function")** som tar en array innehållande ett godtyckligt antal objekt (personer med namn och ålder) som argument och returnerar ett nytt objekt. Det objekt som returneras ska innehålla information om den högsta åldern, lägsta åldern, medelåldern samt en sträng med samtliga namn sorterade i bokstavsordning.
 
 ### Argument:
@@ -139,11 +137,15 @@ console.log(result);
 ```
 
 ### Exempel på resultat:
-<img class="size-full wp-image-541 aligncenter" src="http://coursepress.lnu.se/kurs/webbteknik-i/files/2012/11/2012-11-29-09-16-41.png" alt="" width="727" height="80" />
+![][vandalen1]
 
 ### ![][star] Stjärnuppgift
 Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
 
+Implementera felhantering i uppgiften. Gör kontroller för att inmatade objekt innehåller det som de ska göra. Kontrollera exempelvis att åldrar är heltal och att namn är strängar.
+
 [star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png
 
 [info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/information.png
+
+[vandalen1]:https://github.com/Leitet/Kursmaterial-JavaScript/blob/master/lab/pics/vandalen1.png
