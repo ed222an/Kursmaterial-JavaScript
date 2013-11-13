@@ -90,6 +90,6 @@ console.log(result);
 ### ![][star] Stjärnuppgift
 Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
 
-[star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/star_yellow.png
+[star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png
 
-[info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/information.png
+[info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/information.png
