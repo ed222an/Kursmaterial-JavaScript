@@ -148,4 +148,4 @@ Implementera felhantering i uppgiften. Gör kontroller för att inmatade objekt 
 
 [info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/information.png
 
-[vandalen1]:https://github.com/Leitet/Kursmaterial-JavaScript/blob/master/lab/pics/vandalen1.png
+[vandalen1]:https://raw.github.com/Leitet/Kursmaterial-JavaScript/master/lab/pics/vandalen1.png
