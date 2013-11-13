@@ -2,14 +2,12 @@
 
 window.onload = function(){
 
-	// I denna funktion ska du skriva koden för att hantera "spelet"
-	var convertString = function(str){
-		// Plats för förändring.		
-		// Returnera den konverterade strängen.
-		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
 	
+	var birthday = function(date){
+		
 
 
+			// Din kod här.
 
 
 
@@ -30,8 +28,18 @@ window.onload = function(){
 		p.classList.remove( "error");
 
 		try {
-			var answer = convertString(input.value) // Läser in texten från textrutan och skickar till funktionen "convertString"
-			p.innerHTML = answer;		// Skriver ut texten från arrayen som skapats i funktionen.	
+			var answer = birthday(input.value) // Läser in texten från textrutan och skickar till funktionen "convertString"
+			var message;
+			switch (answer){
+				case 0: message = "Grattis på födelsedagen!";
+					break;
+				case 1: message = "Du fyller år imorgon!";
+					break;
+				default: message = "Du fyller år om " + answer + " dagar";
+					break;
+			}
+
+			p.innerHTML = message;
 		} catch (error){
 			p.classList.add( "error"); // Växla CSS-klass, IE10+
 			p.innerHTML = error.message;

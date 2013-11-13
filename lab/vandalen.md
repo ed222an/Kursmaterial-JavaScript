@@ -20,7 +20,7 @@ Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
 ## Uppgift X - Gissa det hemliga talet
 En klassiker i programmeringskurser och en uppgift som du kommer att få göra många gånger. Spelet, gissa det hemliga talet. 
 
-Din uppgift blir att färdigställa funktionen "guess" som du hittar i katalogen "gissatalet" i laborations-reprot.
+Din uppgift blir att färdigställa funktionen "guess" som du hittar i katalogen "guess" i laborations-reprot.
 
 Katalogen består av två filer:
 
@@ -34,7 +34,7 @@ Några korta krav:
 * Funktionen _guess_ ska vara en funktion utan sidoeffekter. ("Pure function")
 * Information om parametrar och returvärden finns i js-filen.
 * Programmet behöver hålla reda på hur många gissningar som gjorts.
-* Fundera kring felhantering. Hur gör du om användaren inte matar in ett tal?
+* Om användaren matar in något felaktigt. Hur ska det hanteras?
 
 ### ![][info] Tips
 För att slumpa ett tal mellan 1 och 100 kan du använda dig av följande kodstycke.
@@ -53,20 +53,48 @@ Om du är osäker på hur Math.floor() och Math.random() fungerar så hittar du 
 ## Uppgift X - Strängar
 I denna uppgift ska du titta lite närmare på objektet String som finns att tillgå i JavaScript. I String-objektet finns många metoder och egenskaper. I denna uppgift ska du bekanta dig med några stycken av dessa. String-objektet är värdefullt när textsträngar ska behandlas.
 
-Lös uppgiftens moment (anrop till funktioner) i ett och samma HTML-dokument. Du ska skriva funktionen i en separat scriptfil.
+Uppgiften löser du i filerna som finns i katalogen "strings".
+Fyll på med den kod som behövs i funktionen convertString(str). Denna funktion ska ta en textsträng som argument. Vidare ska funktionen ändra alla versaler i argumentet till gemener och alla gemener i argumentet till versaler. Slutligen ska alla ”a” och ”A” ändras till ”#”.
 
-Moment I
-Skriv funktionen konvertera i JavaScript. Denna funktion ska ta en textsträng som argument. Vidare ska funktionen ändra alla versaler i argumentet till gemener och alla gemener i argumentet till versaler. Slutligen ska alla ”a” och ”A” ändras till ”#”.
+Exempel på indata: “Jag tycker JAVASCRIPT är KUL!” skall alltså returnera: “j#G TYCKER j#v#script ÄR kul!”.
 
-Exempel på indata: “Jag tycker JAVASCRIPT är KUL!” skall alltså bli utdata: “j#G TYCKER j#v#script ÄR kul!”.
+Observera att även svenska tecken ska omfattas av omvandlingen.
 
-När allt är ändrat ska resultatet returneras som en ny textsträng och sedan skrivas ut i konsolen.
+När allt är ändrat ska resultatet returneras som en ny textsträng varvid programmet kommer att skriva ut den under imatningsfältet.
+
+Om användaren klickar på "omvandla" så ska din funktion kasta ett undantag med en lämplig text.
 
 ### ![](info) Tips
 Användbara funktioner, i String-objektet, för denna uppgift är bland annat:
 
 `toLowerCase()` `toUpperCase()` Fler användbara funktioner i String-objetet hittar du på t.ex. Mozilla Developer eller i föreläsningsmaterialet.
 
+## Uppgift X - Födelsedagen
+Nu ska du skriva ett JavaScript som tar reda på hur många dagar det är kvar till användarens födelsedag!
+
+Till din hjälp så har du den kod som finns i katalogen "birthday".
+
+Användaren kan mata in ett datum som kommer att skickas in till den funktion som du ska implementera. Följande krav ställs:
+
+* Om inte inmatat datum är på formen "ÅÅÅÅ-MM-DD" så ska du kasta ett undantag med ett lämpligt felmeddelande.
+* Utifrån den inmatade strängen ska du i funktionen räkna ut hur många dagar det är kvar till att användaren fyller år och returnera detta.
+
+Betrakta speciellt hur du ska hantera följande:
+* Användaren kan redan ha fyllt år? Exempelvis i mars. 
+* Vad händer vid skottår?
+* Fundera kring om din kod uppför sig olika före eller efter klockan 12.00 på dagen.
+
+Skapa utifrån det inlästa datumet ett datumobjekt som representerar när användaren fyller år nästa gång. Utgå ifrån att användaren fyller år i år. Fundera på hur du kan få fram aktuellt år utan att skriva in det i klartext.
+
+Skapa sedan ytterligare ett datumobjekt med dagens datum.
+
+Genom att subtrahera antalet millisekunder till dags dato från antalet millisekunder då du fyller år får du skillnaden mellan datumen. Kan du via denna skillnad se om användaren fyllt år? Om så vad blir då nästa steg?
+
+När du fått detta att fungera kan du sedan omvandla antalet millisekunder till dagar och du är klar med uppgiften.
+
+### ![][info] Tips
+För att ta reda på hur många millisekunder som förflutit sedan 1 januari, 1970 till ett visst datum går det bra att använda följande funktion på en Date-variabel:
+`getTime()`
 
 
 ## Uppgift X - Arrayer och objekt
