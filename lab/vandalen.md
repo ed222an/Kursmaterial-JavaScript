@@ -19,6 +19,7 @@ Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
 överst i samtliga inlänkade javascript-filer.
 ## Arrayer och objekt
 Din uppgift är att skapa en funktion utan sidoeffekter **("pure function")** som tar en array innehållande ett godtyckligt antal objekt (personer med namn och ålder) som argument och returnerar ett nytt objekt. Det objekt som returneras ska innehålla information om den högsta åldern, lägsta åldern, medelåldern samt en sträng med samtliga namn sorterade i bokstavsordning.
+
 ### Argument:
 Objekten i arrayen som skickas som argument ska innehålla två egenskaper:
 
@@ -33,7 +34,9 @@ var data = [{name: "John Häggerud", age: 37}, {name: "Johan Leitet", age: 36}, 
 
 
 ### Returvärde:
-Objektet som returneras ska innehålla fyra egenskaper:	* minAge **- nummer innehållande den ålder i de inskickade objekten som är lägst.**
+Objektet som returneras ska innehålla fyra egenskaper:	
+
+* minAge **- nummer innehållande den ålder i de inskickade objekten som är lägst.**
 * maxAge **-nummer innehållande den ålder i de inskickade objekten som är högst.**
 * avarageAge - **nummer innehållande medelåldern (avrundad) av de inskickade objektens ålder.**
 * names  **- sträng innehållande samtliga personers namn separerade med ", " (komma och efterföljande mellanslag). Namnen sorteras i bokstavsordning.**
