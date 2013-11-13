@@ -7,7 +7,33 @@ Efter du genomfört och blivit godkänd på laborationen har du kunskaper i att 
 
 Du kommer även ha kunskaper om objekten String, Math, Array och Date. Vidare han du också kombinera funktionaliteten hos objekten för att skapa dynamiska JavaScript.
 
+## Uppgift X - Gissa det hemliga talet
+En klassiker i programmeringskurser och en uppgift som du kommer att få göra många gånger. Spelet, gissa det hemliga talet. 
 
+Din uppgift blir att färdigställa funktionen "guess" som du hittar i katalogen "gissatalet" i laborations-reprot.
+
+Katalogen består av två filer:
+
+* index.html, _med ett formulär där vi kan skriva gissningar._
+* script.js, _Kod för att hantera formuläret och den funktion som du ska skriva koden till._
+
+Spelet går ut på att datorn slumpar ett hemligt tal mellan 1 och 100 och låter sedan användaren gissa sig till talet. Om talet användaren gissade på är lägre än det hemliga talet ska ett meddelande visas som talar om för användaren att det hemliga numret är högre än gissningen, likadant ska ett meddelande visas om gissningen var för hög. Användaren ska få gissa på det hemliga numret tills det att rätt nummer gissas. När spelet är slut ska ett meddelande visas som innehåller det hemliga numret och det antal gissningar användaren behövde för att hitta det hemliga numret.
+
+Några korta krav:
+
+* Funktionen _guess_ ska vara en funktion utan sidoeffekter. ("Pure function")
+* Information om parametrar och returvärden finns i js-filen.
+* Programmet behöver hålla reda på hur många gissningar som gjorts.
+
+### ![][info] Tips
+För att slumpa ett tal mellan 1 och 100 kan du använda dig av följande kodstycke.
+
+```js
+Math.floor( Math.random() * (length + 1) )+min;
+Math.floor( Math.random() * 101)+1;
+```
+
+Om du är osäker på hur Math.floor() och Math.random() fungerar så hittar du information om funktionerna i kurslitteraturen eller i föreläsningsmaterialet.
 
 ## Uppgift X
 Samtliga inlänkade filer ska använda ES5 strict-mode. Placera alltså koden:
@@ -65,3 +91,5 @@ console.log(result);
 Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
 
 [star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/star_yellow.png
+
+[info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/information.png
