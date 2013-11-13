@@ -38,7 +38,7 @@ Objektet som returneras ska innehålla fyra egenskaper:
 
 * minAge **- nummer innehållande den ålder i de inskickade objekten som är lägst.**
 * maxAge **-nummer innehållande den ålder i de inskickade objekten som är högst.**
-* avarageAge - **nummer innehållande medelåldern (avrundad) av de inskickade objektens ålder.**
+* avarageAge - **nummer innehållande medelåldern (avrundat nedåt ;)) av de inskickade objektens ålder.**
 * names  **- sträng innehållande samtliga personers namn separerade med ", " (komma och efterföljande mellanslag). Namnen sorteras i bokstavsordning.**
 
 Testa genom att skriva ut resultatet till konsolen:
@@ -61,5 +61,5 @@ console.log(result);
 ### Exempel på resultat:
 <img class="size-full wp-image-541 aligncenter" src="http://coursepress.lnu.se/kurs/webbteknik-i/files/2012/11/2012-11-29-09-16-41.png" alt="" width="727" height="80" />
 
-### Stjärnuppgift
+### ![](https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png)Stjärnuppgift
 Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
