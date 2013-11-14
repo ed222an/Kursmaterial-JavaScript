@@ -42,8 +42,8 @@ För att slumpa ett tal mellan 1 och 100 kan du använda dig av följande kodsty
 
 ```js
 Math.floor( Math.random() * (max-min)+1 )+min;
-Math.floor( Math.random() * (100-0)+1) + 0;
-Math.floor( Math.random() * 101);
+Math.floor( Math.random() * (100-1)+1) + 1;
+Math.floor( Math.random() * 100)+1;
 ```
 
 Om du är osäker på hur Math.floor() och Math.random() fungerar så hittar du information om funktionerna i kurslitteraturen eller i föreläsningsmaterialet.
