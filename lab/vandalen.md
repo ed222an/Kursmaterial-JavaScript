@@ -60,7 +60,7 @@ Observera att även svenska tecken ska omfattas av omvandlingen.
 
 När allt är ändrat ska resultatet returneras som en ny textsträng varvid programmet kommer att skriva ut den under inmatningsfältet.
 
-Om användaren klickar på "omvandla" så ska din funktion kasta ett undantag med en lämplig text.
+Om användaren klickar på "omvandla" utan att ha skrivit in en text så ska din funktion kasta ett undantag med ett lämpligt felmeddelande.
 
 ### ![][info] Tips
 Användbara funktioner, i String-objektet, för denna uppgift är bland annat:
@@ -146,7 +146,7 @@ console.log(result);
 ### ![][star] Stjärnuppgift
 Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
 
-Implementera felhantering i uppgiften. Gör kontroller för att inmatade objekt innehåller det som de ska göra. Kontrollera exempelvis att åldrar är heltal och att namn är strängar.
+Implementera felhantering i uppgiften. Gör kontroller för att inmatade objekt innehåller det som de ska göra. Kontrollera exempelvis att åldrar är heltal och att namn är strängar. 
 
 [star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png
 
