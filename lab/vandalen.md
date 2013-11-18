@@ -87,7 +87,7 @@ Skapa utifrån det inlästa datumet ett datumobjekt som representerar när anvä
 
 Skapa sedan ytterligare ett datumobjekt med dagens datum.
 
-Genom att subtrahera antalet millisekunder till dags dato från antalet millisekunder då du fyller år får du skillnaden mellan datumen. Kan du via denna skillnad se om användaren fyllt år? Om så vad blir då nästa steg?
+Genom att subtrahera antalet millisekunder till dagens datum från antalet millisekunder då du fyller år får du skillnaden mellan datumen. Kan du via denna skillnad se om användaren fyllt år? Om så vad blir då nästa steg?
 
 När du fått detta att fungera kan du sedan omvandla antalet millisekunder till dagar och du är klar med uppgiften.
 
