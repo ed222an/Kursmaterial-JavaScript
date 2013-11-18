@@ -212,6 +212,6 @@ Lycka till!
 
 [star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png
 
-[star_big]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/32/star_yellow.png
+[star_big]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/24/star_yellow.png
 
 [info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/information.png
