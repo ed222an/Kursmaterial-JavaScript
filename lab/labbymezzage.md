@@ -185,7 +185,7 @@ Det som nu ska göras är:
 - CSS-kod länkas in med ett externt dokument.
 - Javascriptkoden sätter aldrig stilmallsinformation direkt utan CSS-klasser används.
 
-## ![][star] För en större utmaning
+## ![][star_big] För en större utmaning
 _(Detta steg ger inte högre betyg på denna laboration som enbart bedöms med U/G men kommer att hjälpa dig vid projektet)_
 
 Om man väljer att skapa uppgiften i ett statiskt objekt så märker man fort en begränsning, det går inte att köra flera instanser av meddelandetjänsten i samma HTML-dokument samtidigt. Har du ambition att satsa på högre betyg i denna kurs kan det därför vara bra att försöka lösa detta problem redan nu och få ovärderlig kunskap som du får nytta av i betygssteget 5 i projektet.
@@ -211,5 +211,7 @@ Hängde du med? I så fall löser du detta i ett nafs!
 Lycka till!
 
 [star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png
+
+[star_big]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/32/star_yellow.png
 
 [info]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/information.png
