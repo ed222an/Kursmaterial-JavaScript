@@ -144,9 +144,10 @@ console.log(result);
 ![][vandalen1]
 
 ### ![][star] Stjärnuppgift
-Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
 
-Implementera felhantering i uppgiften. Gör kontroller för att inmatade objekt innehåller det som de ska göra. Kontrollera exempelvis att åldrar är heltal och att namn är strängar. 
+1) Lös uppgiften utan att använda någon av looparna: for, while, do...while eller villkorssatserna if, switch.
+
+2) Implementera felhantering i uppgiften. Gör kontroller för att inmatade objekt innehåller det som de ska göra. Kontrollera exempelvis att åldrar är heltal och att namn är strängar. För felhanteringen får if-satser, switch etc. användas.
 
 [star]:https://coursepress.lnu.se/program/webbprogrammerare/wp-content/plugins/coursepress/icons/16/star_yellow.png
 
